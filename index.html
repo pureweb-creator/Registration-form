@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+        @font-face{font-family:'Montserrat';src:url("fonts/Montserrat-Regular.otf");src:url("fonts/Montserrat-Regular.otf?#iefix") format("embedded-opentype"),url("fonts/Montserrat-Regular.woff") format("woff"),url("fonts/Montserrat-Regular.woff2") format("woff2"),url("fonts/Montserrat-Regular.ttf") format("truetype");font-weight:normal;font-style:normal;font-display: swap;}
+        @font-face{font-family:'Montserrat Italic';src:url("fonts/Montserrat-Italic.otf");src:url("fonts/Montserrat-Italic.otf?#iefix") format("embedded-opentype"),url("fonts/Montserrat-Italic.woff") format("woff"),url("fonts/Montserrat-Italic.woff2") format("woff2"),url("fonts/Montserrat-Italic.ttf") format("truetype");font-weight:normal;font-style:normal;font-display: swap;}
+        @font-face{font-family:'Montserrat';src:url("fonts/Montserrat-Medium.otf");src:url("fonts/Montserrat-Medium.otf?#iefix") format("embedded-opentype"),url("fonts/Montserrat-Medium.woff") format("woff"),url("fonts/Montserrat-Medium.woff2") format("woff2"),url("fonts/Montserrat-Medium.ttf") format("truetype");font-weight:500;font-style:normal;font-display: swap;}
+    </style>
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="css/bootstrap-grid.min.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="css/main.min.css">
+    <noscript><link rel="stylesheet" href="css/bootstrap-grid.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="css/main.min.css"></noscript>
+    <title>SIGN UP | Goodwill Capital</title>
+</head>
+<body class="auth-page">
+    <main class="main">
+        <div class="container">
+            <div class="row auth-inner">
+                <div class="col-lg-5 offset-lg-3">
+                    <form action="#" method="POST" class="sign-up-form" role="form">
+                        <div class="input-group">
+                            <label for="phone" class="input-group__label input-group__label_phone">
+                                Phone number
+                                <span class="input-group__help"></span>
+                            </label>
+                            <input type="text" id="phone" autocomplete="username" name="phone" placeholder="(123) 456-78-90" autofocus="true" class="input-group__input input-group__input_phone error">
+                        </div>
+                        <div class="input-group">
+                            <input type="password" autocomplete="new-password" name="password" id="password" class="input-group__input" required>
+                            <label for="password" class="input-group__label">
+                                Password
+                                <span class="input-group__help"></span>
+                            </label>
+                            <a href="#!" class="input-group__pass-status"></a>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" autocomplete="new-password" name="password-repeat" id="password-repeat" class="input-group__input" required>
+                            <label for="password-repeat" class="input-group__label">
+                                Password Repeat
+                                <span class="input-group__help"></span>
+                            </label>
+                            <a href="#!" class="input-group__pass-status"></a>
+                        </div>
+                        <div class="input-group">
+                            <label for="rules" class="custom-checkbox d-flex align-items-center">
+                                <input class="custom-checkbox__input" checked type="checkbox" id="rules">
+                                <span class="custom-checkbox__icon">
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.07929L10.5027 0.582031L4.05287 7.0319L1.49726 4.47629L0 5.97355L4.05287 10.0264L12 2.07929Z" fill="white"/>
+                                    </svg>
+                                </span>
+                                <div class="custom-checkbox__label d-flex terms">
+                                    I accept <a href="/">terms and conditions of the Agreement</a>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <button name="do_signup" type="button" id="registerBtn" class="btn_style1 d-iflex align-items-center">
+                                <span>Register</span>
+
+                                <svg width="50" class="btn__icon" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.3474 24.5097L29.5776 14.6484L28.8672 15.3522L37.4444 24.0098H12V25.0098H37.4444L28.8672 33.6672L29.5776 34.371L39.3474 24.5097Z" fill="#DDBC62"/>
+                                    <circle cx="25" cy="25" r="24.5" stroke="#DDBC62"/>
+                                </svg>
+                            </button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script defer src="js/jquery.js"></script>
+    <script defer src="js/jquery-ui.js"></script>
+    <script defer src="js/masked-input.js"></script>
+    <script defer src="js/phone-code.js"></script>
+    <script defer src="js/main.min.js"></script>
+</body>
+</html>
